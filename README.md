@@ -9,6 +9,15 @@ Rychlé odkazy
 - [Instalace virtuálního prostředí](#venv)
 - [Před instalací knihoven](#pip)
 - [Instalace knihoven](#libs)
+- [První spuštění Jupyter Notebook](#first-jupyter-start)
+- [Každé další spouštění Jupyter Notebook](#every-jupyter-start)
+
+
+Odkazy na dokumentace
+---
+- [Dokumentace PIP](https://pip.pypa.io/en/stable/)
+- [Dokumentace virtualenv](https://docs.python.org/3/tutorial/venv.html)
+- [Dokumentace Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/)
 
 ---
 
@@ -105,6 +114,7 @@ To se nyní bude chvilku stahovat a instalovat.
 
 
 ### První spuštění Jupyter Notebooku
+<a name="first-jupyter-start"></a>
 
 Nyní můžeme zadat příkaz pro spuštění Jupyter notebook následující příkaz:
 
@@ -114,6 +124,9 @@ jupyter notebook
 ```
 
 Mějme na paměti z jakého adresáře Notebook spouštíme. Spouštíme ho z virtuálního prostředí (uvnitř další hierarchie) a budeme schopni pracovat se soubory z aktuálně používaného adresáře.
+
+### Každé další spouštění
+<a name="every-jupyter-start"></a>
 
 Každé další spouštění Notebooku bude probíhat následovně:
 

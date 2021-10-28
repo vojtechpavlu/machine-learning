@@ -23,7 +23,7 @@ Během výuky budeme používat následující nástroje:
 ## Instrukce pro přípravu prostředí
 
 - [Instalace jazyka Python](https://github.com/vojtechpavlu/machine-learning/blob/prep_python-install/python-install)
-- [Připrava virtuálního prostředí](https://github.com/vojtechpavlu/machine-learning/edit/prep_venv)
+- [Připrava virtuálního prostředí](https://github.com/vojtechpavlu/machine-learning/edit/prep_venv/venv-prep)
 
 
     

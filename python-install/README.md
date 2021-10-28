@@ -146,3 +146,6 @@ Jazyk Python je jedním z nejpoužívanějších jazyků dneška. Lze se s ním 
 - [Dokumentace](https://docs.python.org/3/) jazyka
 - [Python wiki](https://wiki.python.org/moin/)
 
+# Kam dál?
+
+Dále budeme instalovat [virtuální prostředí](https://github.com/vojtechpavlu/machine-learning/tree/prep_venv).

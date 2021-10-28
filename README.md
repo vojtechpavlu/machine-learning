@@ -1,1 +1,2 @@
-# machine-learning
+# Instalace jazyka Python
+

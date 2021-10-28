@@ -108,11 +108,15 @@ To se nyní bude chvilku stahovat a instalovat.
 
 Nyní můžeme zadat příkaz pro spuštění Jupyter notebook následující příkaz:
 
+<a name="start-jupyter"></a>
 ```bash
 jupyter notebook
 ```
 
+Mějme na paměti z jakého adresáře Notebook spouštíme. Spouštíme ho z virtuálního prostředí (uvnitř další hierarchie) a budeme schopni pracovat se soubory z aktuálně používaného adresáře.
 
+Každé další spouštění Notebooku bude probíhat následovně:
 
-
- 
+1. Dostat se do tohoto adresáře
+2. Spustit virtuální prostředí (viz [spouštění venv](#start-venv))
+3. Spustit Jupyter Notebook (viz [spouštění notebooku](#start-jupyter))

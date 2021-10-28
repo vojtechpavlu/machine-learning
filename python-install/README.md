@@ -21,12 +21,12 @@ Rychlé odkazy:
     - Doporučuji stáhnout verzi 3.8 nebo 3.9, ale v zásadě je to jedno. V nejhorším případě bude třeba přeinstalovat.
 
 2. Spusťte instalační program a nainstalujte
-    - *Install Python 3.X (64-bit)*
-      - Zaškrtněme dole *Add Python 3.X to PATH
+    - Obrazovka *Install Python 3.X (64-bit)*
+      - Zaškrtněme dole *Add Python 3.X to PATH*
       - Vyberme *Custom installation*
-    - *Optional Features*
+    - Obrazovka *Optional Features*
       - Všechno zaškrtnout (Dokumentace, pip, tcl/tk and IDLE, Python test suite)
-    - *Advanced Options*
+    - Obrazovka *Advanced Options*
       - Ideálně pro všechny uživatele (ale asi volitelné)
       - Určitě zaškrtnout *Add Python to environment variables*
       - Co není třeba zaškrtávat - *Download debugging symbols* a *Download debug binaries* (čistě volitelné)

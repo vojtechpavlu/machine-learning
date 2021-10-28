@@ -84,7 +84,7 @@ Pro všechny OS lze ověřit přítomnost pomocí příkazu
 pip --version
 ```
 
-Pokud jste tak ještě neučinili či ho nemáte z jiného důvodu, nainstalujte si balíčkovací manager *pip*, viz [návod na instalaci Pythonu](https://github.com/vojtechpavlu/machine-learning/blob/prep_python-install/python-install/README.md). Pro linux stačí jen zadat
+Pokud jste tak ještě neučinili či ho nemáte z jiného důvodu, nainstalujte si balíčkovací manager *pip*, viz [návod na instalaci Pythonu](https://github.com/vojtechpavlu/machine-learning/blob/prep_python-install/python-install). Pro linux stačí jen zadat
 
 ```bash
 sudo apt-get install python3-pip

@@ -1,0 +1,2 @@
+# Instalace jazyka Python
+

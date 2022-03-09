@@ -7,6 +7,9 @@ Tento stručný návod obsahuje základní sadu kroků pro instalaci programovac
 
 Rychlé odkazy:
 ---
+- [Zpět na hlavní stránku](https://github.com/vojtechpavlu/machine-learning/tree/main)
+
+
 - [Instalace pro Windows](#windows)
 - [Instalace pro Linux](#linux)
 - [Instalace pro MacOS](#mac) - Ještě bohužel nedostupné

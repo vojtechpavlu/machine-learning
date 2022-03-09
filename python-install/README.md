@@ -151,4 +151,4 @@ Jazyk Python je jedním z nejpoužívanějších jazyků dneška. Lze se s ním 
 
 # Kam dál?
 
-Dále budeme instalovat [virtuální prostředí](https://github.com/vojtechpavlu/machine-learning/tree/prep_venv).
+Dále budeme instalovat [virtuální prostředí](https://github.com/vojtechpavlu/machine-learning/tree/prep_venv/venv-prep).

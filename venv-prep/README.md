@@ -1,6 +1,8 @@
 # Příprava virtuálního prostředí
 
-Vytváříme si virtuální prostředí, aby bylo možné oddělit nástroje využívané výhradně pro strojové učení od nástrojů obecně v Pythonu používaných. V tomto tutoriálu je použit název **machine-learning**, ale na názvu prakticky nezáleží. Můžete si vybrat prakticky libovolná název, mějte to však v mysli, že musíte příkazy upravit před jejich zadáním.
+Vytváříme si virtuální prostředí, aby bylo možné oddělit knihovny využívané výhradně pro strojové učení od knihoven obecně v Pythonu používaných. Výhodou je fakt, že je snadné si tyto spravovat pro potřeby právě jednoho projektu, stejně jako je výhodou přenositelnost. Drobnou nevýhodou je fakt, že pro každý projekt (resp. každé prostředí) je třeba tuto sekvenci příkazů provést znovu.
+
+V tomto tutoriálu je použit název **machine-learning**, ale na názvu prakticky nezáleží. Můžete si vybrat prakticky libovolný název, mějte to však v mysli, že musíte příkazy upravit před jejich zadáním.
 
 
 Rychlé odkazy
@@ -9,7 +11,7 @@ Rychlé odkazy
 - [Instalace virtuálního prostředí](#venv)
 - [Před instalací knihoven](#pip)
 - [Instalace knihoven](#libs)
-- [První spuštění Jupyter Notebook](#first-jupyter-start)
+- [První spuštění Jupyter Notebook](#start-jupyter)
 - [Každé další spouštění Jupyter Notebook](#every-jupyter-start)
 
 
@@ -18,57 +20,6 @@ Odkazy na dokumentace
 - [Dokumentace PIP](https://pip.pypa.io/en/stable/)
 - [Dokumentace virtualenv](https://docs.python.org/3/tutorial/venv.html)
 - [Dokumentace Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/)
-
----
-
-### Instalace virtuálního prostředí <a name="venv"></a>
-
-1. Otevřme si příkazovou řádku
-2. Přemístíme se do libovolného adresáře, kde budeme chtít pracovat
-    Budeme sem stahovat větší objemy dat. Záleží tedy na tom, zda-li máme na příslušném disku dostatek místa. Jinak je to víceméně jedno.
-    
-    Musíte nejdříve nainstalovat *pythoní balíček* `virtualevn`. Ten nainstalujete pomocí package manageru `pip`. To uděláme následovně:
-    
-    ```bash
-    pip install virtualenv
-    ```
-    
-    Pro ty z Vás, kteří používají Linux může dojít k chybě. Zkuste tento příkaz upravit na
-    
-    ```bash
-    sudo pip install virtualenv
-    ```
-
-    Nyní máme balíček virtuálního prostředí připraven a můžeme se přesunout do vytvoření prostředí pro práci.
-    
-    
-    Pro Windows, linux a MacOS zadáme
-    
-    ```bash
-    python -m venv machine-learning
-    ```
-    
-    To nám vytvoří virtuální prostředí s názvem *machine-learning*. 
-    
-    **Nyní budeme virtuální prostředí spouštět.**<a name="start-venv"></a>
-    
-    Pro Windows to uděláme následovně:
-    
-    ```bash
-    .\machine-learning\Scripts\activate
-    ```
-    
-    Zatímco pro Linux a MacOS použijeme
-    
-    ```bash
-    source machine-learning/bin/activate
-    ```
-    
-    Prostředí je spuštěno. Všimněme si závorky vždy na začátku řádku. Pokud budeme chtít prostředí ukončit, stačí napsat <a name="end-venv"></a>
- 
-    ```bash
-    deactivate
-    ```
 
 ---
 
@@ -94,6 +45,58 @@ Pro Windows bude pravděpodobně třeba provést reinstalaci Pythonu a ujištěn
 
 ---
 
+### Instalace virtuálního prostředí <a name="venv"></a>
+
+1. Otevřme si příkazovou řádku (terminál)
+2. Přemístíme se do libovolného adresáře, kde budeme chtít pracovat (např. ```D:/skola/OSY/```). Budeme sem stahovat větší objemy dat. Záleží tedy na tom, zda-li máme na příslušném disku dostatek místa. Jinak je to víceméně jedno.
+    
+Musíte nejdříve nainstalovat *pythoní balíček* `virtualenv`. Ten nainstalujete pomocí package manageru `pip`. To uděláme následovně:
+    
+```bash
+pip install virtualenv
+```
+    
+Pro ty z Vás, kteří používají Linux může dojít k chybě. Zkuste tento příkaz upravit na
+    
+```bash
+sudo pip install virtualenv
+```
+
+Nyní máme knihovnu virtuálního prostředí připravenu a můžeme se přesunout do vytvoření prostředí pro práci.
+    
+Pro Windows, linux a MacOS zadáme
+    
+```bash
+python -m venv machine-learning
+```
+    
+To nám vytvoří virtuální prostředí s názvem *machine-learning*. Zde může být použit jakýkoliv validní název; dále je to ale ukázáno s názvem *machine-learning*, tak na to v dalších příkazech pamatujte.
+    
+**Nyní budeme virtuální prostředí spouštět.**<a name="start-venv"></a>
+    
+Z akutálního adresáře spustíme skript v cestě ```[virtuální prostředí]/Scripts/activate```
+    
+Pro Windows to uděláme následovně:
+    
+```bash
+.\machine-learning\Scripts\activate
+```
+    
+Zatímco pro Linux a MacOS použijeme
+    
+```bash
+source machine-learning/bin/activate
+```
+    
+Prostředí je spuštěno. Všimněme si závorky vždy na začátku řádku. Pokud budeme chtít prostředí ukončit, stačí napsat <a name="end-venv"></a>
+ 
+```bash
+deactivate
+```
+
+
+---
+
 ### Instalace potřebných knihoven <a name="libs"></a>
 
 **Pokud nemáme virtuální prostředí aktivováno, neý budeme pokračovat - [spusťmě ho](#start-venv).** Pokud by prostředí nebylo spuštěno, bude se vše instalovat globálně.
@@ -113,12 +116,11 @@ python -m pip install jupyter matplotlib numpy pandas scipy scikit-learn
 To se nyní bude chvilku stahovat a instalovat.
 
 
-### První spuštění Jupyter Notebooku
-<a name="first-jupyter-start"></a>
+### Spuštění Jupyter Notebooku
+<a name="start-jupyter"></a>
 
 Nyní můžeme zadat příkaz pro spuštění Jupyter notebook následující příkaz:
 
-<a name="start-jupyter"></a>
 ```bash
 jupyter notebook
 ```
@@ -130,7 +132,7 @@ Mějme na paměti z jakého adresáře Notebook spouštíme. Spouštíme ho z vi
 
 Každé další spouštění Notebooku bude probíhat následovně:
 
-1. Dostat se do tohoto adresáře
+1. Dostat se do tohoto adresáře (který obsahuje adresář vytvořeného virtuálního prostředí)
 2. Spustit virtuální prostředí (viz [spouštění venv](#start-venv))
 3. Spustit Jupyter Notebook (viz [spouštění notebooku](#start-jupyter))
 
